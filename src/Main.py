@@ -85,5 +85,3 @@ else:
             print('         Duration of Classification: {}'.format((end_time - start_time).total_seconds()))
             print('=======')
 
-
-
