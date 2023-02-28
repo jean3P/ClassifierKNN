@@ -1,5 +1,18 @@
 from ReduceTrainingSet import ReduceTrainingSet
 
+reduceDatasetDirectoryCondensing = "../resources/reduceDataset/condensing"
+reduceDatasetDirectoryEditing = "../resources/reduceDataset/editing"
+distancesMetrics = ['euclidean', 'manhattan']
+namefileReducingDataset = 'X_train.csv'
+reduceTrainingAlgorithms = ['condensing', 'editing']
+def get_path_files():
+    path_files = []
+    euclideanCondensingXtrain = reduceDatasetDirectoryCondensing+'/'+distancesMetrics[0]+'_'+namefileReducingDataset
+    manhattanCondensingXtrain = reduceDatasetDirectoryCondensing+'/'+distancesMetrics[1]+'_'+namefileReducingDataset
+    euclideanEditingXtrain = reduceDatasetDirectoryEditing+'/'+distancesMetrics[0]+'_'+namefileReducingDataset
+    manhattanEditingXtrain = reduceDatasetDirectoryEditing+'/'+distancesMetrics[1]+'_'+namefileReducingDataset
+    path_files = [euclideanCondensingXtrain, manhattanCondensingXtrain, euclideanEditingXtrain, manhattanEditingXtrain]
+    return path_files
 
 def reduce_training_set(reduce, classifier, X_train):
     if reduce == 'condensing':
