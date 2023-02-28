@@ -30,7 +30,7 @@ if os.listdir(reduceDatasetDirectoryCondensing) and (os.listdir(reduceDatasetDir
 
         accuracy_vals = []
         # start_time = datetime.now()
-        K_values = [1, 3, 5, 10, 15]
+        KValues = Helper.KValues
         print('=========== File: '+ file)
         if file.find(distancesMetrics[0]) != -1:
             classifier = KnnClassifier(distance_metric=distancesMetrics[0])
@@ -38,7 +38,7 @@ if os.listdir(reduceDatasetDirectoryCondensing) and (os.listdir(reduceDatasetDir
         else:
             classifier = KnnClassifier(distance_metric=distancesMetrics[1])
             print('==== ' + distancesMetrics[1].capitalize() + ' ====')
-        for k_n in K_values:
+        for k_n in KValues:
             print(" == For K: ", k_n)
             start_time = datetime.now()
             X_test_size = X_test.shape[0]
