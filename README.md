@@ -32,7 +32,7 @@ The mnist dataset (test.csv, train.csv) has to be in the directory:
 
 After adding the data mnist, run the Main:
 ```bash
-  run ClassifierKNN/src/Main_Knn_Without_Reducing_Dataset.py
+  run ClassifierKNN/src/Main_Knn_Without_Reduced_Dataset.py
 ```
 
 ## To use the reduction algorithms
@@ -53,7 +53,7 @@ The new (reduced) data will be stored in:
 
 Finally, run the KNN algorithm:
 ```bash
-  run ClassifierKNN/src/Main_Knn_With_Reduce_Dataset.py
+  run ClassifierKNN/src/Main_Knn_With_Reduced_Dataset.py
 ```
 ## Statistics
 
