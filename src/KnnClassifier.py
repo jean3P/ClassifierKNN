@@ -50,7 +50,6 @@ class KnnClassifier:
         distance_list = []
 
         for training_data in x_train:
-            # print(len(training_data))
             distance = self.get_distance_metric(training_data, test_data, reduceTrainingSet)
             # a set of the training value (a row) with its corresponding distance
             distance_list.append((training_data, distance))
@@ -66,8 +65,6 @@ class KnnClassifier:
         for j in range(k):
             # if k is equals to five trends five times in order to find five nearest neighbors
             # get the first value
-            # print(k)
-            # print(len(distance_list))
             neighbors_list.append(distance_list[j][0])
 
         return neighbors_list

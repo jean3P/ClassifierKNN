@@ -29,7 +29,6 @@ if os.listdir(reduceDatasetDirectoryCondensing) and (os.listdir(reduceDatasetDir
         X_train = np.loadtxt(file, delimiter=',')
 
         accuracy_vals = []
-        # start_time = datetime.now()
         KValues = Helper.KValues
         print('=========== File: '+ file)
         if file.find(distancesMetrics[0]) != -1:

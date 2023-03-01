@@ -43,7 +43,6 @@ if (os.listdir(dataset_path)):
     X_train = totalTrainingSet
 
     accuracy_vals = []
-    # start_time = datetime.now()
     KValues = Helper.KValues
 
 for distance in distancesMetrics:
