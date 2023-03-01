@@ -57,7 +57,7 @@ Finally, run the KNN algorithm:
 ```
 ## Statistics
 
-- Ranking statistics for the entire training set:
+- Ranking statistics for the entire training set (%):
 
 | Distance  | K = 1  | k = 3  | k = 5  | k = 10 | k = 15 |
 |:----------|:------:|:------:|:------:|:------:|:------:|
@@ -71,14 +71,14 @@ Finally, run the KNN algorithm:
 | Euclidean |   263760   |   612300   |
 | Manhattan |   262190   |   606805   |
 
-- Classification statistics using condensing:
+- Classification statistics using condensing (%):
 
 | Distance  | K = 1  | k = 3  | k = 5  | k = 10 | k = 15 |
 |:----------|:------:|:------:|:------:|:------:|:------:|
 | Euclidean | 82.382 | 56.056 | 48.248 | 33.133 | 25.925 |
 | Manhattan | 80.580 | 54.454 | 44.244 | 30.230 | 28.128 |
 
-- Classification statistics using editing:
+- Classification statistics using editing (%):
 
 | Distance  | K = 1  | k = 3  | k = 5  | k = 10 | k = 15 |
 |:----------|:------:|:------:|:------:|:------:|:------:|
